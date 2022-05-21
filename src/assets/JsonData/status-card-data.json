@@ -1,0 +1,62 @@
+[
+    {
+        "icon": "bx bxs-user-account",
+        "count": "1,995",
+        "title": "Les patients",
+        "subtitle": "Patients"
+
+    },
+    {
+        "icon": "bx bxs-hotel",
+        "count": "2,001",
+        "title": "Les opérations",
+        "subtitle": "Patients"
+
+    },
+    {
+        "icon": "bx bx-git-repo-forked",
+        "count": "2,632",
+        "title": "Les consultations",
+        "subtitle": "Patients"
+
+    },
+    {
+        "icon": "bx bx-capsule",
+        "count": "1,711",
+        "title": "Les traitements",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bx-receipt",
+        "count": "1,711",
+        "title": "Visite du jour",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bxs-ambulance",
+        "count": "1,711",
+        "title": "Les urgences",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bxs-flask",
+        "count": "1,711",
+        "title": "Les analyses",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bx-group",
+        "count": "1,711",
+        "title": "Les docteurs",
+        "subtitle": "Patients"
+
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "icon": "bx bx-edit",
+        "content": "editer"
+    },
+    {
+        "icon": "bx bx-wallet-alt",
+        "content": "upload"
+    },
+    {
+        "icon": "bx bx-cog",
+        "content": "Settings"
+    }
+]
