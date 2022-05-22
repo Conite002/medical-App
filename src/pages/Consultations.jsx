@@ -1,8 +1,10 @@
-import React from 'react'
+import React ,{ useState } from 'react'
 
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 import Table from '../components/table/Table'
+
+import Calendar from 'react-calendar'
 
 import avatar01 from '../assets/images/avatar-1.jpg'
 
@@ -12,7 +14,7 @@ import avatar03 from '../assets/images/avatar-3.jpg'
 
 import avatar04 from '../assets/images/avatar-4.jpg'
 
-
+import 'react-calendar/dist/Calendar.css';
 
 
 const topCustomers = {
@@ -60,53 +62,66 @@ const renderCustomerBody = (item,index) =>(
 
 const Consultation = () => {
 
+  const [value, onChange] = useState(new Date());
 
   return (
     <div>
 
       <div className="row ">
         
-      <div className="col-7 consultation-past">
-        <div className="card ">
+        <div className="col-7 consultation-past">
+          <div className="card ">
 
-          <div className="card__header">
-            <h3>Les patients récents</h3>
-            <p>Dernière semaine</p>
-          </div>
-          <div className="card__body">
-            {/* table */}
-            <Table 
-              headData = {topCustomers.head}
-              renderHead={(item, index) => renderCustomerHead(item, index)}
-              bodyData = {topCustomers.body}
-              renderBody={(item,index) => renderCustomerBody(item, index)} 
-            />
-          </div>
-          <div className="card__footer">
-            <Link to='/' >View all</Link>
-          </div>
+            <div className="card__header">
+              <h3>Les patients récents</h3>
+              <p>Dernière semaine</p>
+            </div>
+            <div className="card__body">
+              {/* table */}
+              <Table 
+                headData = {topCustomers.head}
+                renderHead={(item, index) => renderCustomerHead(item, index)}
+                bodyData = {topCustomers.body}
+                renderBody={(item,index) => renderCustomerBody(item, index)} 
+              />
+            </div>
+            <div className="card__footer">
+              <Link to='/' >View all</Link>
+            </div>
 
+          </div>
+          
         </div>
-        
+
+        <div className="col-5">
+          <div className="circle">
+            
+              <div className="small small1"></div>
+              <div className="small small2"></div>
+              <div className="small small3"></div>
+          </div>
+        </div>
+
       </div>
 
-      <div className="col-5">
-        
+      <div className="row">
+        <div className="col-12">
 
-        <div className="circle">
-          
-            <div className="small small1"></div>
-            <div className="small small2"></div>
-            <div className="small small3"></div>
-          
+          <div className="card">
+              <div className="card__header">
+                Calendrier - CONSULTATION
+              </div>
+              <div className="card__body">
+              <div>
+                <Calendar hover={new Date(2017, 0, 1)} onChange={onChange} value={value} />
+              </div>
+              </div>
+              <div className="card__footer"></div>
 
-          
-
+            </div>
+            
         </div>
       </div>
-
-      </div>
-
   
     </div>
   )

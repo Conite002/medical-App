@@ -47,7 +47,9 @@
     /* background */
     --gradient-blue-violet:linear-gradient(90deg,#5616f5,#b446f4);
     --box-shadow-white: rgb(255, 255, 255) 0px 8px 24px;
+    --txt-color-semi-trans : #8f8787;
 
+    --main-color-blue-two : #7bc1f0;
 }
 
 * {
@@ -257,4 +259,48 @@ input:focus {
 
 .laboratory span{
 
+}
+
+/* Treatements */
+
+.treatment h3{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+.center-content .sec-content-card{
+    margin: 20px;
+}
+
+.sec-content-card-text{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color:var(--txt-color-semi-trans);
+    text-transform: uppercase;
+    
+}
+
+.sec-content-card-text span{
+     color:var(--main-color);
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.sec-content-card-text i{
+    font-size: 3rem;
+    margin-left: 30px;
+    color:var(--main-color-blue-two);
+}
+
+.sec-content-card-text div{
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
 }
