@@ -22,6 +22,8 @@ import ConsultationCard from '../components/consultation-card/ConsultationCard'
 
 import { avatar01 } from '../assets/images/avatar-1.jpg'
 
+import CustomChartsPie from '../components/chartCustom/CustomChartsPie'
+
 
 const chartOptions = {
   series:[{
@@ -185,11 +187,11 @@ const Dashboard = () => {
     <div>
       <h2 className="page-header">Dashboard</h2>
       <div className="row">
-        <div className="col-12">
+        <div className="col-7">
           <div className="row">
             {
               statusCards.map((item, index) =>(
-                <div className="col-3" key={index} >
+                <div className="col-6" key={index} >
                   {/* {item.title} */}
                   <StatusCard
                     icon={item.icon}
@@ -200,6 +202,16 @@ const Dashboard = () => {
                 </div>
               ))
             }
+          </div>
+        </div>
+
+        <div className="col-5">
+          <div className="row">
+            
+            <div className="card">
+              <CustomChartsPie />
+            </div>
+
           </div>
         </div>
         

@@ -7,6 +7,7 @@ import CustomDonuts from '../components/chartCustom/CustomDunots'
 import SplineLine from '../components/chartCustom/SplineLine'
 import { Link } from 'react-router-dom'
 import Table  from '../components/table/Table'
+import CustomSplineArea from '../components/chartCustom/CustomSplineArea'
 
 const chartOptions = {
   series:[{
@@ -68,6 +69,72 @@ const topCustomers = {
       "order":"120",
       "price": "bx bx-user"
     }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
+    ,
+    {
+      "username" :"anthony baker",
+      "order":"120",
+      "price": "bx bx-user"
+    }
   ]
 }
 
@@ -106,7 +173,7 @@ const themeReducer = useSelector(state => state.ThemeReducer.mode)
             <div className="card treatment">
               <div className="card__header">
                 <h3>Traitements</h3>
-                  <Chart
+                  {/* <Chart
                     options={themeReducer === 'theme-mode-dark' ? {
                         ...chartOptions.options,
                         theme : {mode: 'dark' }
@@ -119,7 +186,12 @@ const themeReducer = useSelector(state => state.ThemeReducer.mode)
                     type='line'
                     height='100%'
 
+                  /> */}
+                  <CustomSplineArea
+                    options = {chartOptions.options}
+                    series = {chartOptions.series}
                   />
+
               </div>
             </div>
           </div>
@@ -204,17 +276,18 @@ const themeReducer = useSelector(state => state.ThemeReducer.mode)
                   />
                 </div>
                 <div className="card__footer">
-                  <Link to='/' >View all</Link>
+                  {/* <Link to='/' >View all</Link> */}
                 </div>
               </div>
             
             </div>
 
           </div>
-        
-
-      
     </div>
+
+    {/* <div className="row">
+      <CustomSplineArea />
+    </div> */}
 
   </div>
   )
