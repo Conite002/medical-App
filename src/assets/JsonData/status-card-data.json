@@ -26,6 +26,37 @@
         "title": "Les traitements",
         "subtitle": "Patients"
 
+    },
+    {
+        "icon": "bx bx-receipt",
+        "count": "1,711",
+        "title": "Visite du jour",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bxs-ambulance",
+        "count": "1,711",
+        "title": "Les urgences",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bxs-flask",
+        "count": "1,711",
+        "title": "Les analyses",
+        "subtitle": "Patients"
+
+    }
+    ,
+    {
+        "icon": "bx bx-group",
+        "count": "1,711",
+        "title": "Les docteurs",
+        "subtitle": "Patients"
+
     }
     
 ]

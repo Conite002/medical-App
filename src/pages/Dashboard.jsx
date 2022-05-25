@@ -187,11 +187,11 @@ const Dashboard = () => {
     <div>
       <h2 className="page-header">Dashboard</h2>
       <div className="row">
-        <div className="col-7">
+        <div className="col-12">
           <div className="row">
             {
               statusCards.map((item, index) =>(
-                <div className="col-6" key={index} >
+                <div className="col-3" key={index} >
                   {/* {item.title} */}
                   <StatusCard
                     icon={item.icon}
@@ -205,7 +205,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="col-5">
+        {/* <div className="col-5">
           <div className="row">
             
             <div className="card">
@@ -213,7 +213,7 @@ const Dashboard = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
         
       <div className="col-7">
         <div className="card full-height">
@@ -297,7 +297,9 @@ const Dashboard = () => {
       <div className="col-4">
         <div className="card">
           <div className="card-header"></div>
-          <div className="card-body"></div>
+          <div className="card-body">
+          <CustomChartsPie />
+          </div>
           <div className="card-footer"></div>
         </div>
       </div>
@@ -305,7 +307,9 @@ const Dashboard = () => {
       <div className="col-4">
         <div className="card">
           <div className="card-header"></div>
-          <div className="card-body"></div>
+          <div className="card-body">
+          <CustomChartsPie />
+          </div>
           <div className="card-footer"></div>
         </div>
       </div>
@@ -313,7 +317,9 @@ const Dashboard = () => {
       <div className="col-4">
         <div className="card">
           <div className="card-header"></div>
-          <div className="card-body"></div>
+          <div className="card-body">
+          <CustomChartsPie />
+          </div>
           <div className="card-footer"></div>
         </div>
       </div>

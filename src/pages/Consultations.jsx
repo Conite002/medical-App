@@ -14,7 +14,6 @@ import avatar03 from '../assets/images/avatar-3.jpg'
 
 import avatar04 from '../assets/images/avatar-4.jpg'
 
-import 'react-calendar/dist/Calendar.css';
 
 
 const topCustomers = {
@@ -113,7 +112,8 @@ const Consultation = () => {
               </div>
               <div className="card__body">
               <div>
-                <Calendar hover={new Date(2017, 0, 1)} onChange={onChange} value={value} />
+                {/* <Calendar hover={new Date(2017, 0, 1)} onChange={onChange} value={value} /> */}
+           
               </div>
               </div>
               <div className="card__footer"></div>
