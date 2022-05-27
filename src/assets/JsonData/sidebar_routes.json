@@ -1,6 +1,6 @@
 [
     {
-        "display_name": "Dashboard",
+        "display_name": "Accueil",
         "route": "/",
         "icon": "bx bx-category-alt"
     },
@@ -25,7 +25,7 @@
         "icon": "bx bx-bar-chart-alt"
     },
     {
-        "display_name": "Planing",
+        "display_name": "Programmes",
         "route": "/planing",
         "icon": "bx bx-list-ol"
     },

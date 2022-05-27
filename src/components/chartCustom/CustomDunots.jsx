@@ -13,11 +13,13 @@ class CustomDonuts extends Component {
     }
   }
 
-  render() {
+  
 
+  render() {
+    const legends={show : false}
     return (
       <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
+        <Chart options={this.state.options} series={this.props.series || this.state.series}  type="donut" width="380" />
       </div>
     );
   }

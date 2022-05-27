@@ -46,10 +46,31 @@
     --txt-violet:violet;
     /* background */
     --gradient-blue-violet:linear-gradient(90deg,#5616f5,#b446f4);
-    --box-shadow-white: rgb(255, 255, 255) 0px 8px 24px;
-    --txt-color-semi-trans : #8f8787;
 
-    --main-color-blue-two : #7bc1f0;
+    --gradient-blue:linear-gradient(90deg,#0a78f5,#71b6f2);
+    
+    --gradient-blueLight:linear-gradient(90deg,#52a3ff,#b7d8f4);
+
+    --gradient-vert:linear-gradient(90deg,#a9c976,#d4f4b2);
+
+    --gradient-red:linear-gradient(90deg,#ff6969,#f8c2c2);
+
+    --box-shadow-white: rgb(255, 255, 255) 0px 8px 24px;
+    --txt-color-semi-trans : #d6c8c8;
+
+    --main-color-blue-two : #c2e6ff;
+    --combo-bleu : #e0f0ef;
+    --combo-bleu-second : #3a85db;
+    --combo-vert : #e1fce9;
+    --combo-vert-second : #94fab2;
+    --combo-rose : #f8ece7;
+    --combo-rose-second : #e4926f;
+    --combo-yellow:#f4ecc4f3;
+    --combo-yellow-second:#ebcb18;
+    --combo-indigo:rgb(207, 174, 231);
+    --combo-indigo-second:indigo;
+
+    
 }
 
 * {
@@ -177,6 +198,7 @@ input:focus {
 /* consultation start */
 
 
+
 .circle{
     width: 500px;
     height: 500px;
@@ -245,10 +267,101 @@ input:focus {
     padding: 20px;
 } */
 
+.circleIcon{
+    border-radius: 50%;
+    border-color: var(--main-bg);
+    border: 3px white solid;
+    height: 35px;
+    width: 35px;
+    background-color: var(--combo-bleu-second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--main-bg);
+    font-size: .7rem;
+
+}
+
+.consultation-background  .bottom{
+    display: flex;
+    margin-top: 10px;
+}
+
+.bg-vert{
+    background-color: var(--combo-vert-second);
+}
+
+.bg-rose{
+    background-color: var(--combo-rose-second);
+}
+
+.bg-yellow{
+    background-color: var(--combo-yellow);
+}
+
+.bg-yellow-second{
+    background-color: var(--combo-yellow-second);
+}
+
+.bg-indigo{
+    background-color: var(--combo-indigo);
+}
+
+.bg-red{
+    background-color: rgb(245, 207, 207);
+}
+
+.bg-red-second{
+    background-color: rgb(238, 61, 61);
+}
+
+.bg-bleu{
+    background-color: var(--combo-bleu);
+}
+
+.bg-bleu-second{
+    background-color: var(--combo-bleu-second);
+}
+
+.bg-bleu-thrid{
+    background-color: #10a0d4;
+}
+
+.consultation-background .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation-background .top .icon{
+    font-size: 2rem;
+}
+
+.consultation-background .top .text p{
+    font-size: 0.6rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 
 
 /********* ANALYSES *******/
 
+.gradient-vert{
+    background: var(--gradient-vert);
+}
+
+.gradient-blue{
+    background: var(--gradient-blue);
+}
+
+.gradient-blueLight{
+    background: var(--gradient-blueLight);
+}
+
+.gradient-red{
+    background: var(--gradient-red);
+}
 
 .laboratory{
     background: var(--gradient-blue-violet);
@@ -303,4 +416,90 @@ input:focus {
     justify-content: center;
     align-items: center;
     align-content: space-between;
+}
+
+/*  Urgences               */
+.urgence-image{
+    background-image: url("/src/assets/imagecv/10.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content:space-between;
+    border-radius: var(--border-radius);
+    height: 100%;
+}
+
+.left img{
+    border-radius: 20px;
+    width: calc(100% - 50);
+     
+}
+
+/*******************  Programmes   ****************** */
+
+.programme-card{
+    background-color: var(--combo-bleu);
+}
+
+.position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.position .left{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.combo-vert .left{
+    background-color: var(--combo-vert);
+
+}
+
+.combo-vert .left i{
+    color: var(--combo-vert-second);
+}
+
+.combo-rose .left{
+    background-color: var(--combo-rose);
+}
+
+.combo-rose .left i{
+    color: var(--combo-rose-second);
+}
+
+
+.combo-bleu .left{
+    background-color: var(--combo-bleu);
+}
+.combo-bleu .left i{
+    color: var(--combo-bleu-second);
+}
+
+.position i{
+
+    font-size: 2rem;
+}
+
+.position .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.position .right>h6{
+    margin-bottom: 5px;
+    color: var(--txt-color-semi-trans);
+}
+
+.position .right span{
+    margin-top: 5px;
+    font-weight: 800;
+    
+
 }

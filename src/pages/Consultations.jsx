@@ -13,6 +13,7 @@ import avatar02 from '../assets/images/avatar-2.jpg'
 import avatar03 from '../assets/images/avatar-3.jpg'
 
 import avatar04 from '../assets/images/avatar-4.jpg'
+import ConsultationCardTwo from '../components/consultation-card/ConsultationCardTwo'
 
 
 
@@ -111,9 +112,21 @@ const Consultation = () => {
                 Calendrier - CONSULTATION
               </div>
               <div className="card__body">
-              <div>
+              <div className='row'>
                 {/* <Calendar hover={new Date(2017, 0, 1)} onChange={onChange} value={value} /> */}
-           
+                <div className="col-3">
+                  <ConsultationCardTwo />
+                </div>
+                <div className="col-3">
+                  <ConsultationCardTwo />
+                </div>
+                <div className="col-3">
+                  <ConsultationCardTwo />
+                </div>
+                <div className="col-3">
+                  <ConsultationCardTwo />
+                </div>
+                
               </div>
               </div>
               <div className="card__footer"></div>
