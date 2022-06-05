@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ConsultationCardTwo = () => {
+const ConsultationCardTwo = (props) => {
   return (
     <div>
         <div className="card consultation-background bg-bleu">
@@ -10,7 +10,7 @@ const ConsultationCardTwo = () => {
                         <i className="bx bxs-arch"></i>
                     </div>
                     <div className="text">
-                        <h5>Paludisme</h5>
+                        <h5>{props.title}</h5>
                         <p>8:00 AM  -  4:00 PM</p>
                         <h6>120 participants</h6>
                     </div>

@@ -115,16 +115,26 @@ const Consultation = () => {
               <div className='row'>
                 {/* <Calendar hover={new Date(2017, 0, 1)} onChange={onChange} value={value} /> */}
                 <div className="col-3">
-                  <ConsultationCardTwo />
+                  <ConsultationCardTwo
+                    title={"HEPATHITE"}
+                  />
                 </div>
                 <div className="col-3">
-                  <ConsultationCardTwo />
+                  <ConsultationCardTwo
+                    title={"FIEVRE J"}
+
+                  />
                 </div>
                 <div className="col-3">
-                  <ConsultationCardTwo />
+                  <ConsultationCardTwo
+                    title={"TROUBLES"}
+
+                  />
                 </div>
                 <div className="col-3">
-                  <ConsultationCardTwo />
+                  <ConsultationCardTwo 
+                    title={"GROSSESSES"}
+                  />
                 </div>
                 
               </div>

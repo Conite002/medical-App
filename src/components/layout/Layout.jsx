@@ -7,6 +7,7 @@ import Routes from '../Routes'
 
 import Sidebar from '../sidebar/Sidebar'
 import TopNav from '../topnav/TopNav'
+import Login from '../../login/Login'
 
 const Layout = () => {
   return (

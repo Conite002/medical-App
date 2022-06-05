@@ -185,7 +185,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h2 className="page-header">Dashboard</h2>
+      <h2 className="page-header">TABLEAU DE BORD</h2>
       <div className="row">
         <div className="col-12">
           <div className="row">

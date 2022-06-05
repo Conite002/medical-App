@@ -22,12 +22,11 @@ const Urgences = () => {
                     <div className="card bg-bleu">
                       <h4>Urgences adultes</h4>
 
-                    
                     </div>
                   </div>
 
                   <div className="row">
-                    <div className="card bg-indigo">
+                    <div className="card bg-bleu">
                       <h4>Urgences gynécologiques</h4>
                       
 
@@ -35,7 +34,7 @@ const Urgences = () => {
                   </div>
 
                   <div className="row">
-                    <div className="card bg-yellow-second">
+                    <div className="card bg-bleu">
                       <h4>Urgences psychiatriques</h4>
 
                     </div>
@@ -47,13 +46,13 @@ const Urgences = () => {
                   <CustomDunots
                     series = {[44, 55, 41, 25, 87]}
                     labels =  {['A', 'B', 'C', 'D', 'E']}
-
+                    display = {false}
                   />
                 </div>
 
                 <div className="col-4">
                   <div className="row">
-                    <div className="card bg-vert">
+                    <div className="card bg-bleu">
                       <h4>Urgences tête et cou</h4>
 
                     
@@ -61,7 +60,7 @@ const Urgences = () => {
                   </div>
 
                   <div className="row">
-                    <div className="card">
+                    <div className="card bg-bleu">
                       <h4>Urgences gynécologiques</h4>
                       
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import laboImage from '../../assets/icons/icons-64-white/laboratory.png'
+import QuaterCircle from '../chartCustom/QuaterCircle'
 import './labocard.css'
 
 const LaboCard = (props) => {
@@ -20,8 +21,10 @@ const LaboCard = (props) => {
                 </div>
                 <div className="bottom">
                     <p>{props.description}</p>
+                    
                 </div>
             </div>
+            
         </div>
     </div>
   )
