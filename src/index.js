@@ -19,6 +19,9 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import rootReducer from './redux/reducers'
+import Login from './login/Login';
+import App from './app/App';
+import TestLogin from './app/TestLogin';
 
 
 const store = createStore(
@@ -30,7 +33,9 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
       <React.StrictMode>
-        <Layout />
+        {/* <Layout /> */}
+        {/* <App /> */}
+        <TestLogin />
       </React.StrictMode>
     </Provider>
     ,
