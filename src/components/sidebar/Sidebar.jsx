@@ -32,7 +32,7 @@ const Sidebar = props => {
   return (
     <div className='sidebar'>
       <div className="sidebar__logo">
-        <img src={logo} alt="Rom logo" />
+        <img src={logo} alt="Rom logo" /> CLINIQ
       </div>
       {
         sidebar_items.map((item, index) =>(
