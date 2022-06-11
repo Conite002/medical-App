@@ -33,9 +33,9 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
       <React.StrictMode>
-        {/* <Layout /> */}
+        <Layout />
         {/* <App /> */}
-        <TestLogin />
+        {/* <TestLogin /> */}
       </React.StrictMode>
     </Provider>
     ,
