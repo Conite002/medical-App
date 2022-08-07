@@ -1,0 +1,14 @@
+.top .text h5{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.top .text p{
+
+}
+
+.bottom p{
+    font-size: .7rem;
+    color:whitesmoke;
+}

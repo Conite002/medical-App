@@ -1,0 +1,39 @@
+.content{
+    display: flex;
+    align-items: center;
+    background-color: #f7f8fa;
+    margin: 5px;
+}
+
+.info-detail{
+    padding: 20px;
+
+}
+
+.value{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.blue{
+    color: #5616f5;
+}
+
+.vert{
+    color: #3beaf5;
+}
+
+.violet{
+    color: #ff5acd;
+}
+
+.level{
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: flex;
+}
+

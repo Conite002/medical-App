@@ -1,0 +1,31 @@
+[
+    {
+        "image":"../images/avatar-2.jpg",
+        "name":"Nathalie Roberts",
+        "birth":"14 March 1980 ",
+        "address":"54 Av, Nr 56 City",
+        "gendre":"Feminin",
+        "email":"nathalie@email.com",
+        "contact":"+229 95654421",
+        "language":"français",
+        "poids":"50 Kg",
+        "pression":"ATM 20",
+        "temperature" :"20 C",
+        "groupeSanguin":"AB",
+        "allergies":"allergies, allergies",
+        "maladies" :"Diabetes",
+        "PressionSanguine":"120",
+        "pressionLevel":"normal (mn/Hg)",
+        "canvasPression":"",
+        "HeartRate":"80",
+        "levelRate":"normal (bpm)",
+        "canvasHeart":"",
+        "glucose":"80",
+        "levelGlucose":"normal (bpm)",
+        "canvasGlucose":"",
+        "cholesterol":"120",
+        "levelCholesterol":"normal (bpm)",
+        "canvasCholesterol":""
+
+    }
+]

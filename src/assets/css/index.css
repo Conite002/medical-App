@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --main-bg: #ffffff;
+    --second-bg: #fafafb;
+    --txt-color: #455560;
+    --txt-white: #fff;
+    --main-color: rgb(79, 72, 187);
+    /* --main-color: #349eff; */
+    /* --second-color: #62b4ff; */
+    --second-color: rgb(114, 112, 224);
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --txt-color-light: #455560;
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-dark: #2d2d2d;
+    --second-bg-dark: #202020;
+    --txt-color-dark: #bbbbbb;
+    --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+    --main-color-blue: #349eff;
+    --second-color-blue: #62b4ff;
+
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff4a6b;
+
+    --main-color-cyan: #10d4d2;
+    --second-color-cyan: #2ae9e6;
+
+    --main-color-green: #019707;
+    --second-color-green: #4caf50;
+
+    --main-color-orange: #d68102;
+    --second-color-orange: #fca11a;
+
+    --sidebar-width: 250px;
+    --border-radius: 15px;
+    --border-radius-button: 7px;
+    --topnav-height: 110px;
+    --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* font-size: ; */
+    --font-size-10: 12px;
+
+    --txt-violet:violet;
+    /* background */
+    --gradient-blue-violet:linear-gradient(90deg,#5616f5,#b446f4);
+
+    --gradient-blue:linear-gradient(90deg,#0a78f5,#71b6f2);
+    
+    --gradient-blueLight:linear-gradient(90deg,#52a3ff,#b7d8f4);
+
+    --gradient-vert:linear-gradient(90deg,#a9c976,#d4f4b2);
+
+    --gradient-red:linear-gradient(90deg,#ff6969,#f8c2c2);
+
+    --box-shadow-white: rgb(255, 255, 255) 0px 8px 24px;
+    --txt-color-semi-trans : #d6c8c8;
+
+    --main-color-blue-two : #c2e6ff;
+    --combo-bleu : #e0f0ef;
+    --combo-bleu-second : #3a85db;
+    --combo-vert : #e1fce9;
+    --combo-vert-second : #94fab2;
+    --combo-rose : #f8ece7;
+    --combo-rose-second : #e4926f;
+    --combo-yellow:#f4ecc4f3;
+    --combo-yellow-second:#ebcb18;
+    --combo-indigo:rgb(207, 174, 231);
+    --combo-indigo-second:indigo;
+
+
+    --primary-blue-100 : rgb(79, 72, 187);
+    --primary-blue-80 : rgb(114, 112, 224);
+    --primary-blue-60 : rgb(137, 137, 243);
+    --primary-blue-40 : rgb(141, 141, 245);
+    --primary-blue-20 : rgba(100, 95, 215, 0.55);
+    --primary-blue-15 : rgba(101, 95, 215, 0.082);
+    --primary-blue-10 : rgb(242, 247, 255);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--txt-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    border: 2px solid transparent;
+    outline: 0;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+}
+
+.page-header {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.card__header {
+    text-transform: capitalize;
+}
+
+.card__header p {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+
+.card > div ~ div {
+    margin-top: 30px;
+}
+
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+.light-background {
+    background-color: var(--main-bg-light);
+    color: #000;
+}
+
+.dark-background {
+    background-color: var(--main-bg-dark);
+    color: #fff;
+}
+
+.blue-color {
+    background-color: var(--main-color-blue);
+    color: #fff;
+}
+
+.red-color {
+    background-color: var(--main-color-red);
+    color: #fff;
+}
+
+.cyan-color {
+    background-color: var(--main-color-cyan);
+    color: #fff;
+}
+
+.green-color {
+    background-color: var(--main-color-green);
+    color: #fff;
+}
+
+.orange-color {
+    background-color: var(--main-color-orange);
+    color: #fff;
+}
+
+
+/* consultation start */
+
+
+
+.circle{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #1c1c1c;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 83%;
+
+    /* padding-top: 20px;
+    padding-right: 95px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 6px var(--txt-color) solid;
+    border-radius: 70%;
+    transform: translate(70%);
+    transform-origin: center; */
+    
+}
+
+.small{
+    width: 30px;
+    height: 30px;
+    background: #1c1c1c;
+    border-radius: 50%;
+    position: absolute;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-blend-mode: multiply;
+}
+
+.small1{
+    left : 75px;
+    top: 40px;
+    background-image: url("../images/avatar-1.jpg");
+}
+
+.small2{
+    top :50%;
+    left: -2%;
+    transform: scale(8);
+    background-image: url("../images/avatar-2.jpg");
+    background-color: transparent;
+}
+
+.small3{
+    top: 88%;
+    left: 18%;
+    background-image: url("../images/avatar-3.jpg");
+}
+
+.suite-patient-info{
+    display: flex;
+    padding-top: 30px ;
+
+    /* align-items: center; */
+}
+
+/* .patient-hist-medi{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+} */
+
+.circleIcon{
+    border-radius: 50%;
+    border-color: var(--main-bg);
+    border: 3px white solid;
+    height: 35px;
+    width: 35px;
+    background-color: var(--combo-bleu-second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--main-bg);
+    font-size: .7rem;
+
+}
+
+.consultation-background  .bottom{
+    display: flex;
+    margin-top: 10px;
+}
+
+.bg-vert{
+    background-color: var(--combo-vert-second);
+}
+
+.bg-rose{
+    background-color: var(--combo-rose-second);
+}
+
+.bg-yellow{
+    background-color: var(--combo-yellow);
+}
+
+.bg-yellow-second{
+    background-color: var(--combo-yellow-second);
+}
+
+.bg-indigo{
+    background-color: var(--combo-indigo);
+}
+
+.bg-red{
+    background-color: rgb(245, 207, 207);
+}
+
+.bg-red-second{
+    background-color: rgb(238, 61, 61);
+}
+
+.bg-bleu{
+    background-color: var(--combo-bleu);
+}
+
+.bg-bleu-second{
+    background-color: var(--combo-bleu-second);
+}
+
+.bg-bleu-thrid{
+    background-color: #10a0d4;
+}
+
+.consultation-background .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation-background .top .icon{
+    font-size: 2rem;
+}
+
+.consultation-background .top .text p{
+    font-size: 0.6rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+
+/********* ANALYSES *******/
+
+.gradient-vert{
+    background: var(--gradient-vert);
+}
+
+.gradient-blue{
+    background: var(--gradient-blue);
+}
+
+.gradient-blueLight{
+    background: var(--gradient-blueLight);
+}
+
+.gradient-red{
+    background: var(--gradient-red);
+}
+
+.laboratory{
+    background: var(--gradient-blue-violet);
+    color: var(--main-bg);
+    padding: 20px;
+    margin: 20px;
+}
+
+.laboratory span{
+
+}
+
+/* Treatements */
+
+.treatment h3{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+.center-content .sec-content-card{
+    margin: 20px;
+}
+
+.sec-content-card-text{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color:var(--txt-color-semi-trans);
+    text-transform: uppercase;
+    
+}
+
+.sec-content-card-text span{
+     color:var(--main-color);
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.sec-content-card-text i{
+    font-size: 3rem;
+    margin-left: 30px;
+    color:var(--main-color-blue-two);
+}
+
+.sec-content-card-text div{
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+/*  Urgences               */
+.urgence-image{
+    background-image: url("/src/assets/imagecv/10.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content:space-between;
+    border-radius: var(--border-radius);
+    height: 100%;
+}
+
+.left img{
+    border-radius: 20px;
+    width: calc(100% - 50);
+     
+}
+
+
+/*******************  Programmes   ****************** */
+
+.programme-card{
+    background-color: var(--combo-bleu);
+}
+
+.position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.position .left{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.combo-vert .left{
+    background-color: var(--combo-vert);
+
+}
+
+.combo-vert .left i{
+    color: var(--combo-vert-second);
+}
+
+.combo-rose .left{
+    background-color: var(--combo-rose);
+}
+
+.combo-rose .left i{
+    color: var(--combo-rose-second);
+}
+
+
+.combo-bleu .left{
+    background-color: var(--combo-bleu);
+}
+.combo-bleu .left i{
+    color: var(--combo-bleu-second);
+}
+
+.position i{
+
+    font-size: 2rem;
+}
+
+.position .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.position .right>h6{
+    margin-bottom: 5px;
+    color: var(--txt-color-semi-trans);
+}
+
+.position .right span{
+    margin-top: 5px;
+    font-weight: 800;
+    
+
+}
