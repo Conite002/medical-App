@@ -95,7 +95,7 @@ const renderCustomerBody = (item,index) =>(
   <tr key={index} >
     <td>{item.username} </td>
     <td>{item.order} </td>
-    <td><i class={item.price} ></i></td>
+    <td><i className={item.price} ></i></td>
   </tr>
 )
 

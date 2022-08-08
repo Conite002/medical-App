@@ -12,11 +12,12 @@ import Patients from '../pages/Patients'
 import Secretaire_home from '../pages/secretaire/Accueil'
 import Secretaire_enregistrement from '../pages/secretaire/Ajout'
 import Liste_patients from '../pages/secretaire/Liste'
-
+import Login from "../login/Login"
 
 const Routes = () => {
   return (
     <Switch>
+        <Route path= '/login' exact component={Login} />
         <Route path= '/secretaire' exact component={Secretaire_home} />
         <Route path= '/secretaire/liste' exact component={Liste_patients} />
         <Route path= '/secretaire/enregistrement' exact component={Secretaire_enregistrement} />
