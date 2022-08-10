@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { login, useAuth,  logout } from '../firebase'
 import { UseAuthUser } from './UseAuthUser'
+import './login.css'
 
 
 const Login = (props) => {
 
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
-  const handleAction = (e)=>{
+  const handleaction = (e)=>{
     e.preventDefault();
     
     try {
@@ -40,12 +41,13 @@ const Login = (props) => {
     }
   };
 
-  console.log(email);
   return (
     <div className="section">
-      <div className="Container">
+      <div className="container-fluid">
+        <div className="row"><span>LOGO</span></div>
         <div className="row">
             <div className="col-md-4 content-text">
+              
               <h4>Clinique</h4>
               <h1>Olory TOGBE</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum
@@ -53,22 +55,18 @@ const Login = (props) => {
                   perferendis quasi quam perspiciatis? Asperiores eaque dolorum quidem eum.
               </p>
             </div>
-            <div className="col-md-3 content-circle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div className="col-md-5 content-form">
+
+            <div className="col-md-4 offset-md-4 content-form">
               <form action="">
-                <h5>Connexion</h5>
-                <div className="row">
+                <span><h5>Connexion</h5></span>
+                <div className="row row-input">
                   <input type="email" name="email" id="" onChange={ (e) => setEmail(e.target.value) }/>
                 </div>
-                <div className="row">
+                <div className="row row-input">
                   <input type="password" name="password" id="" onChange={ (e) => setPassword(e.target.value) } />
                 </div>
-                <div className="row">
-                  <button type="submit" handleAction={ (e) => handleAction(e)} >Se connecter</button>
+                <div className="row sub">
+                  <button type="submit" handleAction={ (e) => handleaction(e)} >Se connecter</button>
                 </div>
               </form>
             </div>

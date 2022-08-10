@@ -1,0 +1,42 @@
+[
+    {
+        "display_name": "Accueil",
+        "route": "/secretary",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Liste",
+        "route": "/secretary/liste",
+        "icon": "bx bx-user-pin"
+    },
+    {
+        "display_name": "Ajouter",
+        "route": "/secretary/ajout",
+        "icon": "bx bx-package"
+    },
+    {
+        "display_name": "Patients",
+        "route": "/secretary/patients",
+        "icon": "bx bx-group"
+    },
+    {
+        "display_name": "Urgences",
+        "route": "/urgences",
+        "icon": "bx bx-bar-chart-alt"
+    },
+    {
+        "display_name": "Programmes",
+        "route": "/planing",
+        "icon": "bx bx-list-ol"
+    },
+    {
+        "display_name": "Analyses",
+        "route": "/analyses",
+        "icon": "bx bx-gift"
+    },
+    {
+        "display_name": "paramètres",
+        "route": "/parametres",
+        "icon": "bx bx-cog"
+    }
+]
