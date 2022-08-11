@@ -32,7 +32,7 @@ const Layout = () => {
                                 if (status==="azerty") {
                                     return <SidebarSec {...props}/>;
                                 } 
-                                else if(status === "lololo") {
+                                else if(status === "azerrty") {
                                     return <SidebarDoc {...props}/>;
                                 }
                                 else{
@@ -47,11 +47,11 @@ const Layout = () => {
                                 {
                                     (() => {
                                         console.log(status)
-                                        console.log(status==="azoerty" )
+                                        console.log(status==="azerty" )
                                         if (status==="azerty") {
                                             return <SecRoutes/>;
                                         }
-                                        else if (status==="lololo") {
+                                        else if (status==="azerfty") {
                                             return <Routes />;
                                         }
                                          else {
