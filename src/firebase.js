@@ -41,3 +41,10 @@ export function useAuth() {
 
   return currentUser;
 }
+
+export function isConnected(status){
+  // const [isgood, setIsgood] = useState(false);
+  // setIsgood(status);
+
+  // return isgood;
+}

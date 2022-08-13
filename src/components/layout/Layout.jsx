@@ -3,22 +3,30 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import './layout.css'
 
-import Routes from '../Routes'
-
-import SidebarDoc from '../sidebar/SidebarDoc'
-import SidebarSec from '../sidebar/SidebarSec'
+// import SidebarDoc from '../sidebar/SidebarDoc'
+// import SidebarSec from '../sidebar/SidebarSec'
 import TopNav from '../topnav/TopNav'
 import Login from '../../login/Login'
-import UseAuthUser from '../../login/UseAuthUser'
 import SecRoutes from '../../pages/secretaire/SecRoutes'
-
+import {useAuth} from '../../firebase.js'
+import {userRessource, infoUser, userRoute} from '../../login/ConfigUser'
 
 
 const Layout = () => {
 
-
     const [status, setStatus] = useState("azerty");        
 
+  // const ua = useAuth();
+  const id = (props) =>{ 
+    if(props == undefined){
+      return null;
+    }else{
+       return props.uid;
+    }
+
+  }
+  console.log(infoUser[id(useAuth())])
+  const useruuid = id(useAuth());
   return (
     <BrowserRouter>
         <Route  
@@ -26,33 +34,35 @@ const Layout = () => {
                 <div>
                     <div className='layout'>
                         {
-                            (() => {
-                                console.log(status)
-                                console.log(status==="azerty" )
-                                if (status==="azerty") {
-                                    return <SidebarSec {...props}/>;
-                                } 
-                                else if(status === "azerrty") {
-                                    return <SidebarDoc {...props}/>;
+                           
+                            (() =>{
+                                if(useruuid){
+                                    return userRessource[useruuid](props);
                                 }
                                 else{
                                     return null;
                                 }
-
                             })()
+                            // (() => {
+                            //     if (status==="azertsy") {
+                            //         return <SidebarSec {...props}/>;
+                            //     }  
+                            //     else if(status === "azerty") {
+                            //         return <SidebarDoc {...props}/>;
+                            //     }
+                            //     else{
+                            //         return null;
+                            //     }
+
+                            // })()
                         }
                         <div className="layout__content">
                             <TopNav/>
                             <div className="layout__content-main">
                                 {
                                     (() => {
-                                        console.log(status)
-                                        console.log(status==="azerty" )
-                                        if (status==="azerty") {
-                                            return <SecRoutes/>;
-                                        }
-                                        else if (status==="azerfty") {
-                                            return <Routes />;
+                                        if (useruuid) {
+                                            return userRoute[useruuid](props);
                                         }
                                          else {
                                             return null;

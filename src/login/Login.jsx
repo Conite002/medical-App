@@ -1,42 +1,48 @@
 import React, { useState, useEffect} from 'react'
-import {useNavigate} from "react-router-dom"
-import { login, useAuth,  logout } from '../firebase'
-import { UseAuthUser } from './UseAuthUser'
+import { useHistory } from 'react-router-dom' 
+import { login, useAuth,  logout, isConnected } from '../firebase'
+import  {infoUser} from './ConfigUser'
 import './login.css'
 import instrument from '../assets/img_personnel/18.png'
 
-
 const Login = (props) => {
 
+  const id = (props) =>{ 
+    if(props == undefined){
+      return null;
+    }else{
+       return props.uid;
+    }
+
+  }
+  console.log(id(useAuth()));
+  console.log(infoUser[id(useAuth())])
+  const [ badlogin, setBadlogin ] = useState(false);
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
-  const handleaction = (e)=>{
+  const submitAction = (e)=>{
     e.preventDefault();
     
-    try {
       const ans = login(email, password);
       console.log(ans);
-    } catch (error) {
-      console.log("ressource not found");
+      ans.then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // console.log(infoUser[user.uid])
+        window.location.href = "/";
+        setBadlogin(false);
+      })
+      .catch((error) => {
 
+        setBadlogin(true);
+        console.log(error.message)
+          // window.location.href = "login";
+
+      });
       
-    }
     
   }
-  const navigate = useNavigate();
 
-  const [isgood, setIsgood]=useState(false)  
-
-  if (!isgood) {
-    navigate('/login');
-    } else {
-      // return (
-      //   <div>
-      //     <p>Welcome to your Dashboard</p>
-      //   </div>
-      // );
-      navigate('/');
-    }
 
   return (
     <div className="section">
@@ -57,6 +63,8 @@ const Login = (props) => {
             <div className="col-md-5 content-form">
               <form action="">
                 <div className="row row-title"><h5>Connexion</h5></div>
+                <div className="badlogin" >{badlogin ? <span>Erreur d'authentification</span> : " "}</div>
+
                 <div className="row row-input">
                   <input type="email" placeholder="Email" name="email" id="" onChange={ (e) => setEmail(e.target.value) }/>
                 </div>
@@ -64,7 +72,7 @@ const Login = (props) => {
                   <input type="password" placeholder="Password" name="password" id="" onChange={ (e) => setPassword(e.target.value) } />
                 </div>
                 <div className="row sub">
-                  <button type="submit" handleAction={ (e) => handleaction(e)} >Se connecter</button>
+                  <button type="submit" onClick={ (e) => submitAction(e)} >Se connecter</button>
                 </div>
               </form>
               <div className="virus"><img className="imgvirus" src={instrument}/></div>
