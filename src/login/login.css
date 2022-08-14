@@ -1,6 +1,6 @@
-    body{
+/*    body{
 
-}
+}*/
 
 .badlogin{
     color: red;
@@ -9,7 +9,6 @@
 
 .section.login-img{
     margin: 0px;
-    
     padding :20px;
     height: 100vh;
     width: 100%;
