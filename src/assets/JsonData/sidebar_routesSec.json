@@ -15,28 +15,23 @@
         "icon": "bx bx-package"
     },
     {
-        "display_name": "Patients",
+        "display_name": "Vues Patients",
         "route": "/secretary/patients",
         "icon": "bx bx-group"
     },
     {
         "display_name": "Urgences",
-        "route": "/urgences",
+        "route": "/secretary/urgences",
         "icon": "bx bx-bar-chart-alt"
     },
     {
         "display_name": "Programmes",
-        "route": "/planing",
+        "route": "/secretary/planing",
         "icon": "bx bx-list-ol"
     },
     {
-        "display_name": "Analyses",
-        "route": "/analyses",
-        "icon": "bx bx-gift"
-    },
-    {
         "display_name": "paramètres",
-        "route": "/parametres",
+        "route": "/secretary/parametres",
         "icon": "bx bx-cog"
     }
 ]

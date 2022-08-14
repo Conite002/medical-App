@@ -1,5 +1,16 @@
     body{
-    height: 90vh;
+
+}
+
+.badlogin{
+    color: red;
+    font-weight: 700;
+}
+
+.section.login-img{
+    margin: 0px;
+    padding :20px;
+    height: 100vh;
     width: 100%;
     /* background-image:url(../assets/img_personnel/20.png); */
     background-repeat:no-repeat;
@@ -9,14 +20,6 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-}
-
-.badlogin{
-    color: red;
-    font-weight: 700;
-}
-
-.section{
     overflow: hidden;
     
 }
@@ -201,4 +204,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     display: flex;
     align-items: center;
     justify-content:center;
+}
+
+.section .container-fluid .row.notfound h1{
+    font-weight: bold;
 }

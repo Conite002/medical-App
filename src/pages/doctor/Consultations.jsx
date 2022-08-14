@@ -2,18 +2,18 @@ import React ,{ useState } from 'react'
 
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
-import Table from '../components/table/Table'
+import Table from '../../components/table/Table'
 
 import Calendar from 'react-calendar'
 
-import avatar01 from '../assets/images/avatar-1.jpg'
+import avatar01 from '../../assets/images/avatar-1.jpg'
 
-import avatar02 from '../assets/images/avatar-2.jpg'
+import avatar02 from '../../assets/images/avatar-2.jpg'
 
-import avatar03 from '../assets/images/avatar-3.jpg'
+import avatar03 from '../../assets/images/avatar-3.jpg'
 
-import avatar04 from '../assets/images/avatar-4.jpg'
-import ConsultationCardTwo from '../components/consultation-card/ConsultationCardTwo'
+import avatar04 from '../../assets/images/avatar-4.jpg'
+import ConsultationCardTwo from '../../components/consultation-card/ConsultationCardTwo'
 
 
 

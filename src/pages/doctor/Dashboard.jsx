@@ -1,28 +1,28 @@
 import React, {useEffect} from 'react'
 
-import statusCards from '../assets/JsonData/status-card-data.json'
+import statusCards from '../../assets/JsonData/status-card-data.json'
 
-import consultationUpcomingCard from '../assets/JsonData/consultation_coming.json'
+import consultationUpcomingCard from '../../assets/JsonData/consultation_coming.json'
 
-import StatusCard from '../components/status-card/StatusCard'
+import StatusCard from '../../components/status-card/StatusCard'
 
 import Chart from 'react-apexcharts'
 
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
-import Table from '../components/table/Table'
+import Table from '../../components/table/Table'
 
-import Badge from '../components/badge/Badge'
+import Badge from '../../components/badge/Badge'
 
 import { useSelector, useDispatch  } from 'react-redux' 
 
-import ThemeAction from '../redux/actions/ThemeAction'
+import ThemeAction from '../../redux/actions/ThemeAction'
 
-import ConsultationCard from '../components/consultation-card/ConsultationCard'
+import ConsultationCard from '../../components/consultation-card/ConsultationCard'
 
-import { avatar01 } from '../assets/images/avatar-1.jpg'
+import { avatar01 } from '../../assets/images/avatar-1.jpg'
 
-import CustomChartsPie from '../components/chartCustom/CustomChartsPie'
+import CustomChartsPie from '../../components/chartCustom/CustomChartsPie'
 
 
 const chartOptions = {

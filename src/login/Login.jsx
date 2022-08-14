@@ -4,6 +4,7 @@ import { login, useAuth,  logout, isConnected } from '../firebase'
 import  {infoUser} from './ConfigUser'
 import './login.css'
 import instrument from '../assets/img_personnel/18.png'
+import Layout from '../components/layout/Layout'
 
 const Login = (props) => {
 
@@ -15,8 +16,7 @@ const Login = (props) => {
     }
 
   }
-  console.log(id(useAuth()));
-  console.log(infoUser[id(useAuth())])
+  const auth =  useAuth();
   const [ badlogin, setBadlogin ] = useState(false);
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
@@ -24,28 +24,26 @@ const Login = (props) => {
     e.preventDefault();
     
       const ans = login(email, password);
-      console.log(ans);
+      // console.log(ans);
       ans.then((userCredential) => {
-        // Signed in 
         const user = userCredential.user;
-        // console.log(infoUser[user.uid])
         window.location.href = "/";
         setBadlogin(false);
       })
       .catch((error) => {
 
         setBadlogin(true);
-        console.log(error.message)
-          // window.location.href = "login";
+        console.log(error)
 
       });
       
     
   }
 
-
-  return (
-    <div className="section">
+  const us = useAuth();
+  return us ? (<Layout />
+    
+  ) : (<div className="section login-img ">
       <div className="container-fluid">
         <div className="row">
 
@@ -85,8 +83,7 @@ const Login = (props) => {
             </div>
         </div>
       </div>
-    </div>
-  )
+    </div>)
 }
 
 export default Login;

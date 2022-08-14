@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomSplineArea from '../components/chartCustom/CustomSplineArea'
+import CustomSplineArea from '../../components/chartCustom/CustomSplineArea'
 
 
 const chartOptions = {

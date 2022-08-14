@@ -1,19 +1,19 @@
 import React from 'react'
-import AnalyseCard from '../components/analyse-card/AnalyseCard'
-import ContentInfo from '../components/content-info/ContentInfo'
-import Dropdown from '../components/dropdown/Dropdown'
-import MedicalInfo from '../components/medical-info/MedicalInfo'
-import patientInformation from '../assets/JsonData/patients-info.json'
-import Badge from '../components/badge/Badge'
-import consultationUpcomingCard from '../assets/JsonData/consultation_coming.json'
-import ConsultationCard from '../components/consultation-card/ConsultationCard'
+import AnalyseCard from '../../components/analyse-card/AnalyseCard'
+import ContentInfo from '../../components/content-info/ContentInfo'
+import Dropdown from '../../components/dropdown/Dropdown'
+import MedicalInfo from '../../components/medical-info/MedicalInfo'
+import patientInformation from '../../assets/JsonData/patients-info.json'
+import Badge from '../../components/badge/Badge'
+import consultationUpcomingCard from '../../assets/JsonData/consultation_coming.json'
+import ConsultationCard from '../../components/consultation-card/ConsultationCard'
 import { Link } from 'react-router-dom'
 
-import Table from '../components/table/Table'
+import Table from '../../components/table/Table'
 
-import chat from '../assets/icons/icons-64-white/chat.png'
-import labo from '../assets/icons/icons-64-white/laboratory.png'
-import calendar from '../assets/icons/icons-64-white/calendar.png'
+import chat from '../../assets/icons/icons-64-white/chat.png'
+import labo from '../../assets/icons/icons-64-white/laboratory.png'
+import calendar from '../../assets/icons/icons-64-white/calendar.png'
 
 
 

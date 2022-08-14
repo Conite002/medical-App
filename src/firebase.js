@@ -41,10 +41,6 @@ export function useAuth() {
 
   return currentUser;
 }
+export const dataStore = [];
 
-export function isConnected(status){
-  // const [isgood, setIsgood] = useState(false);
-  // setIsgood(status);
 
-  // return isgood;
-}

@@ -1,13 +1,13 @@
 import React from 'react'
 import Chart from 'react-apexcharts'
 import { useSelector, useDispatch  } from 'react-redux' 
-import  CustomChart  from '../components/chartCustom/CustomChart'
-import CustomChartsPie from '../components/chartCustom/CustomChartsPie'
-import CustomDonuts from '../components/chartCustom/CustomDunots'
-import SplineLine from '../components/chartCustom/SplineLine'
+import  CustomChart  from '../../components/chartCustom/CustomChart'
+import CustomChartsPie from '../../components/chartCustom/CustomChartsPie'
+import CustomDonuts from '../../components/chartCustom/CustomDunots'
+import SplineLine from '../../components/chartCustom/SplineLine'
 import { Link } from 'react-router-dom'
-import Table  from '../components/table/Table'
-import CustomSplineArea from '../components/chartCustom/CustomSplineArea'
+import Table  from '../../components/table/Table'
+import CustomSplineArea from '../../components/chartCustom/CustomSplineArea'
 
 const chartOptions = {
   series:[{
@@ -155,7 +155,7 @@ const renderCustomerBody = (item,index) =>(
   <tr key={index} >
     <td>{item.username} </td>
     <td>{item.order} </td>
-    <td><i class={item.price} ></i></td>
+    <td><i className={item.price} ></i></td>
   </tr>
 )
 

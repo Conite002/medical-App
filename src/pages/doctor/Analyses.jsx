@@ -1,7 +1,7 @@
 import React from 'react'
-import laboratory from '../assets/icons/icons-64-white/laboratory.png'
-import QuaterCircle from '../components/chartCustom/QuaterCircle'
-import LaboCard from '../components/labo-card/LaboCard'
+import laboratory from '../../assets/icons/icons-64-white/laboratory.png'
+import QuaterCircle from '../../components/chartCustom/QuaterCircle'
+import LaboCard from '../../components/labo-card/LaboCard'
 
 const Analyses = () => {
   return (

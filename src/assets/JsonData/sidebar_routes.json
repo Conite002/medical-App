@@ -1,42 +1,42 @@
 [
     {
         "display_name": "Accueil",
-        "route": "/dashboard",
+        "route": "/doctor",
         "icon": "bx bx-category-alt"
     },
     {
         "display_name": "Consultations",
-        "route": "/consultations",
+        "route": "/doctor/consultations",
         "icon": "bx bx-user-pin"
     },
     {
         "display_name": "Traitements",
-        "route": "/traitements",
+        "route": "/doctor/traitements",
         "icon": "bx bx-package"
     },
     {
         "display_name": "Patients",
-        "route": "/patients",
+        "route": "/doctor/patients",
         "icon": "bx bx-group"
     },
     {
         "display_name": "Urgences",
-        "route": "/urgences",
+        "route": "/doctor/urgences",
         "icon": "bx bx-bar-chart-alt"
     },
     {
         "display_name": "Programmes",
-        "route": "/planing",
+        "route": "/doctor/planing",
         "icon": "bx bx-list-ol"
     },
     {
         "display_name": "Analyses",
-        "route": "/analyses",
+        "route": "/doctor/analyses",
         "icon": "bx bx-gift"
     },
     {
         "display_name": "paramètres",
-        "route": "/parametres",
+        "route": "/doctor/parametres",
         "icon": "bx bx-cog"
     }
 ]

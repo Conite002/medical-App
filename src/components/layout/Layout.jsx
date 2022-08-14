@@ -13,10 +13,6 @@ import {userRessource, infoUser, userRoute} from '../../login/ConfigUser'
 
 
 const Layout = () => {
-
-    const [status, setStatus] = useState("azerty");        
-
-  // const ua = useAuth();
   const id = (props) =>{ 
     if(props == undefined){
       return null;
@@ -25,7 +21,6 @@ const Layout = () => {
     }
 
   }
-  console.log(infoUser[id(useAuth())])
   const useruuid = id(useAuth());
   return (
     <BrowserRouter>
@@ -34,7 +29,6 @@ const Layout = () => {
                 <div>
                     <div className='layout'>
                         {
-                           
                             (() =>{
                                 if(useruuid){
                                     return userRessource[useruuid](props);
@@ -43,18 +37,6 @@ const Layout = () => {
                                     return null;
                                 }
                             })()
-                            // (() => {
-                            //     if (status==="azertsy") {
-                            //         return <SidebarSec {...props}/>;
-                            //     }  
-                            //     else if(status === "azerty") {
-                            //         return <SidebarDoc {...props}/>;
-                            //     }
-                            //     else{
-                            //         return null;
-                            //     }
-
-                            // })()
                         }
                         <div className="layout__content">
                             <TopNav/>
