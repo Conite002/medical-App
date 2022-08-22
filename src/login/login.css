@@ -195,6 +195,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     color: blue;
 }
 
+
 .section .container-fluid .row .content-form .row.sub button:hover{
     background:var(--primary-blue-100);
     color: white;
@@ -208,4 +209,15 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 
 .section .container-fluid .row.notfound h1{
     font-weight: bold;
+}
+
+span.check-submit {
+    /*visibility: hidden;*/
+    padding: 10px;
+    background: greenyellow;
+    font-weight: bold;
+    margin-right: 15px;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: all 1s ease;
 }

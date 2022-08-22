@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 import { BrowserRouter, Route, Router, Redirect } from "react-router-dom";
 import Layout from "../components/layout/Layout";
@@ -55,7 +54,7 @@ console.log(isLoggedIn)
                     <div className="layout__content-main">
                         <SecRoutes/>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
         )}
@@ -262,7 +261,7 @@ console.log(isLoggedIn)
         </div>
         )}
       />
-      <Route exact path="*" component={Notfound} />
+      {/*<Route path="*"  component={Notfound} />*/}
     </BrowserRouter>
-  ) : (<Login />) ;
+  ) : (<Login />);
 }
